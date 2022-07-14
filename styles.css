@@ -1,0 +1,367 @@
+:root{
+    --dark-brown: #CA8A04;
+    --light-brown: #F1C012;
+    --regular-brown: #FBBF24;
+    --red: #EF4444;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* html{
+    margin:0;
+    padding:0;
+} */
+
+body{
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+.bigdiv{
+    margin: 0 auto;
+}
+
+/*  ...................................
+                    HEADER
+    ...................................
+ */
+ 
+header{
+    background-image: linear-gradient(var(--dark-brown), var(--light-brown));
+    padding-top:2%;
+    height:50vw;
+    position:relative;
+}
+
+.header-content{
+    width:90%;
+    margin:1% auto 0 auto;
+}
+
+.header-logo{
+    width:300px;
+}
+
+.header-logo:hover{
+    opacity:0.8;
+}
+
+nav a{
+    display:inline-block;
+    font-weight:400;
+    color:black;
+    text-decoration:none;
+    font-size:20px;
+}                                               
+
+nav a:hover{
+    color:rgb(37, 37, 37);
+}
+header .topbar{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+nav{
+    display:flex;
+    flex-wrap: nowrap;
+    column-gap:20%;
+}
+
+.reg button{
+    padding:20px 17px;
+    border-radius: 4px;
+    border:none;
+    font-weight:700;
+    font-size:17px;
+}
+
+.reg > :first-child{
+    margin-right:10px;
+}
+
+.hlogin{
+    background-color: var(--red);
+    color:white;
+    transition: 0.2s ease-in-out;
+}
+
+.hlogin:hover{
+    background-color:#f15d5d;
+    color:rgb(247, 211, 211);
+    cursor:pointer;
+}
+
+.hsign{
+    background-color:black;
+    color:white;
+    transition: 0.2s ease-in-out;
+}
+
+.hsign:hover{
+    background-color:rgb(39, 39, 39);
+    color:rgb(247, 211, 211);
+    cursor:pointer;
+}
+
+.couch{
+    width:90%;
+    position: absolute;
+    bottom:-10vw;
+}
+
+.screenshot{
+    display: block;
+    margin:0 auto;
+    position:absolute;
+    width: 24%;
+    bottom:-10vw;
+    left:38%;
+}
+
+button.download{
+    width:16%;
+    margin: 0 auto;
+    display:flex;
+    padding:0.8% 2%;
+    border:none;
+    border-radius:0.5vw;
+    font-size:1vw;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    column-gap:0.8vw;
+    background-color:var(--dark-brown);
+    position:absolute;
+    bottom:-15vw;
+    left:42%;
+    transition: 0.1s ease-in-out;
+}
+
+button.download:hover{
+    background-color:var(--red);
+    color:hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.download img{
+    height: 1.5vw;
+    transition: 0.1s ease-in-out;
+}
+
+button.download:hover img{
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(277deg) brightness(111%) contrast(101%);
+}
+
+
+
+/*.................................................
+                    SECTION - CARDS
+  .................................................
+ */
+
+
+
+ section.cards{
+    margin:25% 0 0 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+ }
+
+ .card{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    row-gap:1vw;
+    width:20vw;
+ }
+
+ .card img{
+    width:40%;
+    transition:0.3s ease-in-out;
+ }
+
+ .card:hover img{
+    width:46%;
+ }
+
+ .dots{
+    width:6vw;
+ }
+
+ .card h3{
+    font-size:1.6vw;
+    font-weight:700;
+ }
+
+ .card p{
+    text-align: center;
+    font-size: 1vw;
+ }
+
+ 
+
+ /*................................................ 
+                SECTION: PARTNERS
+   ................................................ 
+*/
+
+
+.partners{
+    margin-top:10%;
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding:2%;
+}
+
+.partners h2{
+    color:var(--dark-brown);
+    font-size:2.3vw;
+    margin: 1.2% 0 1.8% 0;
+}
+
+.partners p{
+    font-weight:100;
+    font-size:1vw;
+    letter-spacing:0.05vw;
+    line-height:1.7vw;
+    width:35%;
+    margin:0 auto;
+    margin-bottom:4%;
+}
+
+.plogo{
+    width:8vw;
+    height:8vw;
+    background-color:white;
+    padding: 2%;
+    border-radius:0.5vw;
+}
+
+.set1{
+    margin: 5% auto 2% auto;
+    width:48%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.set2{
+    margin: 0 auto 1.5% auto;
+    width:40%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+/*...............................................
+            SECTION- RELAX
+  ...............................................
+*/
+
+
+.relax{
+    display:flex;
+    margin-top:4%;
+    align-items: center;
+    column-gap:7%;
+}
+
+.relaxtxt{
+    width:30%;
+    margin-left:12%;
+}
+
+.relax h2{
+    font-weight: 700;
+    font-size:2.8vw;
+}
+
+.relax p{
+    font-weight:400;
+    font-size:1.1vw;
+    line-height:1.8vw;
+    margin-top: 1%;
+}
+
+.relaximg{
+    position:relative;
+}
+
+.relaximg img:first-child{
+    width:36vw;
+    margin-right: 10%;
+}
+.circle{
+    position: absolute;
+    width:28vw;
+    bottom: -1.5vw;
+    right:-12vw;
+    z-index: -1;
+}
+
+.relax button{
+    padding:2.3% 5%;
+    margin-top: 6%;
+    border:none;
+    border-radius:0.5vw;
+    font-size:1.2vw;
+    font-weight: 700;
+    background-color:var(--dark-brown);
+    transition: 0.1s ease-in-out;
+    box-shadow: 0.2vw 0.9vw 0.9vw rgba(0, 0, 0, 0.1);
+}
+
+.relax button:hover{
+    background-color:var(--red);
+    color:hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+
+
+/*................................................
+                       FOOTER
+  ................................................
+*/
+
+
+footer{
+    display: flex;
+    margin-top: 10%;
+    column-gap:5%;
+    justify-content: center;
+}
+
+form{
+    align-self:start;
+    border: 0.3vw solid rgb(68, 68, 68);
+    border-radius: 0.5vw;
+    padding: 1% 1%;
+    width:30%;
+}
+
+form li{
+    list-style:none;
+    margin-bottom:4%;
+}
+
+input, textarea{
+    display:block;
+    border:0.3vw solid var(--dark-brown);
+    border-radius: 0.5vw;
+    width:95%;
+    padding:1%;
+}
+
