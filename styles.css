@@ -15,7 +15,7 @@ body{
     font-family: "Open Sans", sans-serif;
     overflow-x: hidden;
     padding: 0;
-    margin: 0;
+    margin: 0 !important;
 }
 
 .bigdiv{
