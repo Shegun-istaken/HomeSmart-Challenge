@@ -29,7 +29,7 @@ header{
     background-image: linear-gradient(var(--dark-brown), var(--light-brown));
     padding-top:2%;
     height:50vw;
-    position:relative;
+    position:static;
 }
 
 .header-content{
@@ -301,7 +301,7 @@ button.download:hover img{
 }
 
 .relaximg{
-    position:relative;
+    position:static;
 }
 
 .relaximg img:first-child{
