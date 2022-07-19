@@ -29,7 +29,7 @@ header{
     background-image: linear-gradient(var(--dark-brown), var(--light-brown));
     padding-top:2%;
     height:50vw;
-    position:static;
+    position:relative;
 }
 
 .header-content{
@@ -301,7 +301,7 @@ button.download:hover img{
 }
 
 .relaximg{
-    position:static;
+    position:relative;
 }
 
 .relaximg img:first-child{
@@ -494,6 +494,10 @@ form button:hover{
 /* 768px */
 
 @media only screen and (max-width: 768px){
+
+    body{
+        overflow-x: hidden;
+    }
 
     header{
         height:500px;
