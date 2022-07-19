@@ -13,3 +13,15 @@ textarea.addEventListener("keyup", function(e){
         labe.remove();
     }
 })
+
+menu = document.querySelector(".menu");
+ex = document.querySelector(".x");
+topbar=document.querySelector(".topbar");
+
+menu.addEventListener("click", function(e){
+    topbar.classList.toggle("no-show")
+})
+
+ex.addEventListener("click", function(e){
+    topbar.classList.toggle("no-show")
+})

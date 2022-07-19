@@ -38,7 +38,10 @@ header{
 }
 
 .header-logo{
-    width:300px;
+    width:24%;
+    position: absolute;
+    top:7%;
+    left:38%;
 }
 
 .header-logo:hover{
@@ -47,20 +50,26 @@ header{
 
 nav a{
     display:inline-block;
-    font-weight:400;
+    font-weight:700;
     color:black;
     text-decoration:none;
-    font-size:20px;
+    font-size:1.5vw;
 }                                               
 
 nav a:hover{
     color:rgba(37, 37, 37, 0.8);
+}
+
+.x, .menu{
+    display:none;
 }
 header .topbar{
     display:flex;
     flex-direction:row;
     justify-content:space-between;
     align-items: center;
+    width:95%;
+    margin:0 auto;
 }
 
 nav{
@@ -69,16 +78,21 @@ nav{
     column-gap:20%;
 }
 
+.reg{
+    width:14vw;
+}
+
 .reg button{
-    padding:20px 17px;
-    border-radius: 4px;
+    display:inline-block;
+    padding:10% 7%;
+    border-radius: 0.4vw;;
     border:none;
     font-weight:700;
-    font-size:17px;
+    font-size:1.2vw;
 }
 
 .reg > :first-child{
-    margin-right:10px;
+    margin-right:5%;
 }
 
 .hlogin{
@@ -115,9 +129,9 @@ nav{
     display: block;
     margin:0 auto;
     position:absolute;
-    width: 24%;
+    width: 20%;
     bottom:-10vw;
-    left:38%;
+    left:40%;
 }
 
 button.download{
@@ -199,6 +213,7 @@ button.download:hover img{
  .card p{
     text-align: center;
     font-size: 1vw;
+
  }
 
  
@@ -234,28 +249,24 @@ button.download:hover img{
 }
 
 .plogo{
-    width:8vw;
-    height:8vw;
+    width:120px;
+    height:120px;
     background-color:white;
     padding: 2%;
     border-radius:0.5vw;
 }
 
-.set1{
-    margin: 5% auto 2% auto;
-    width:48%;
+.set{
+    margin:0 auto;
+    width:70%;
     display:flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap:wrap;
+    column-gap:40px;
+    row-gap:30px;
+    align-items:center;
+    justify-content: center;
 }
 
-.set2{
-    margin: 0 auto 1.5% auto;
-    width:40%;
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-}
 
 
 
@@ -468,4 +479,336 @@ form button:hover{
 
 .app2{
     width:18vw;
+}
+
+
+
+/*..................................................
+  ..................................................
+                MEDIA QUERIES
+  ..................................................
+  ..................................................
+*/
+
+
+/* 768px */
+
+@media only screen and (max-width: 768px){
+
+    header{
+        height:500px;
+        padding:20px;
+    }
+
+    .couch{
+        width:100%;
+        max-width: 300px;
+        position: absolute;
+        left:50%;
+        bottom:-40px;
+        margin-left:-150px;
+    }
+
+    .screenshot{
+        width:100%;
+        max-width: 200px;
+        left: 50%;
+        bottom:-40px;
+        margin-left:-100px;
+    }
+
+    button.download{
+        font-size:15px;
+        padding:10px 2px;
+        width:200px;
+        border-radius: 4px;
+        bottom: -100px;
+        left: 50%;
+        margin-left: -100px;
+    }
+
+    .download img{
+        height:100%;
+        max-height:20px;
+    }
+
+    .dots{
+        display:none;
+    }
+
+    section.cards{
+        flex-direction:column;
+        align-items:center;
+        justify-content: center;
+        row-gap:30px;
+        margin-top:180px;
+        row-gap:70px;
+        width:auto;
+    }
+
+    div.card{
+        row-gap:10px;
+    }
+
+    .card img{
+        max-width:100px;
+        width:100%;
+    }
+
+    .card:hover img{
+        width:100px;
+     }
+
+    .card h3{
+        font-size:22px;
+        width:80vw;
+        text-align: center;
+    }
+
+    .card p{
+        font-size: 12px;
+        width:80vw;
+        text-align: center;
+    }
+
+    .partners h2{
+        font-size: 35px;
+    }
+
+    .partners p{
+        font-size: 14px;
+        width:70%;
+        font-weight:400;
+        line-height:150%;
+        letter-spacing:normal;
+    }
+
+    .plogo{
+        width:100px;
+        height: 100px;
+    }
+
+    .set{
+        margin-top:60px;
+        width:80%;
+    }
+
+    .relax{
+        flex-direction:column-reverse;
+    }
+
+    .circle{
+        display:none;
+    }
+
+    .relaximg img:first-child{
+        max-width: 400px;
+        width:100%;
+    }
+
+    .relaxtxt{
+        margin:0;
+        width:80%;
+    }
+
+    .relaxtxt h2{
+        font-size:35px;
+    }
+
+    .relaxtxt p{
+        font-size:15px;
+        line-height:135%;
+    }
+
+    .relax button{
+        padding: 12px 20px;
+        margin-top: 6%;
+        border:none;
+        font-size:15px;
+        border-radius:6px;
+        font-weight: 700;
+        background-color:var(--dark-brown);
+        transition: 0.1s ease-in-out;
+        box-shadow: 0.2vw 0.9vw 0.9vw rgba(0, 0, 0, 0.1);
+    }
+
+    footer{
+        flex-direction: column;
+        height:auto;
+        row-gap:250px;
+    }
+
+    .app2{
+        display:none;
+    }
+
+    .footdiv{
+        /* height:auto; */
+        row-gap: 30px;
+    }
+    
+    .footdiv .lamp{
+        width:200px;
+    }
+
+    .footdiv button{
+        width:100%;
+        display:flex;
+        padding:16px 28px;
+        border-radius:0.5vw;
+        font-size:14px;
+        column-gap:5px;
+    }
+    
+    .footdiv button:hover{
+        background-color:var(--red);
+        color:hsl(0, 0%, 100%);
+        cursor: pointer;
+    }
+    
+    .footdiv button img{
+        height: 16px;
+    }
+
+    form{
+        border: 4px solid rgba(0, 0, 0, 0.7);
+        border-radius: 12px;
+        padding: 18px 12px 12px 24px;
+        width:100%;
+        max-width:350px;
+        margin-bottom:20px;
+    }
+
+    form h3{
+        font-size:30px;
+    }
+
+    form label{
+        font-size:15px;
+    }
+
+    textarea::placeholder{
+        font-size:15px;
+    }
+
+    input, textarea{
+        border:4px solid var(--dark-brown);
+        border-radius: 6px;
+    }
+
+    form button{
+        padding:12px 21px;
+        margin-top: 30px;
+        border-radius:6px;
+        font-size:16px;
+    }
+
+    div.topbar{
+        /* display:block; */
+        position:fixed;
+        margin: 0;
+        padding:0;
+        border:0;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        width:100vw;
+        height:100vh;
+        background-color: var(--dark-brown);
+        z-index:1;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+        row-gap:20px;
+        transition: 1s ease-in-out;
+    }
+
+    nav{
+        flex-direction:column;
+        row-gap:20px;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    nav a{
+        font-size:20px;
+        font-weight:400;
+    }
+    .reg{
+        width:auto;
+        display:flex;
+        flex-direction:column;
+        margin:0;
+        padding:0;
+        justify-content:center;
+        align-items: center;
+        row-gap:20px;
+    }
+    
+    .reg button{
+        padding:20px 150px;
+        border-radius: 6px;
+        border:none;
+        font-weight:700;
+        font-size:15px;
+    }
+
+    img.x{
+        display:inline-block;
+        position:absolute;
+        right:10px;
+        display: block;
+        max-width:30px;
+        width:100%;
+        right: 10%;
+        top:6%;
+        cursor:pointer
+    }
+
+    .x:hover{
+        filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(277deg) brightness(111%) contrast(101%);
+    }
+
+    .no-show{
+        display:none !important;
+    }
+
+    .header-logo{
+        position: relative;
+        left: 0px;
+        max-width:150px;
+        width:100%;
+    }
+
+    img.menu{
+        display: block;
+        max-width:30px;
+        width:100%;
+        position: absolute;
+        right: 10%;
+        top:6%;
+        cursor:pointer
+    }
+
+    img.menu:hover{
+        filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(277deg) brightness(111%) contrast(101%);
+    }
+    
+}
+
+@media only screen and (max-width: 400px){
+
+    footer{
+        row-gap:100vw;
+    }
+
+}
+
+@media only screen and (max-width: 360px){
+
+    footer{
+        row-gap:150vw;
+    }
+
 }
