@@ -5,6 +5,10 @@
     --red: #EF4444;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -598,6 +602,7 @@ form button:hover{
 
     .relax{
         flex-direction:column-reverse;
+        row-gap:10px;
     }
 
     .circle{
@@ -605,8 +610,10 @@ form button:hover{
     }
 
     .relaximg img:first-child{
-        max-width: 400px;
-        width:100%;
+        /* max-width: 400px; */
+        width:80%;
+        /* margin: 0 auto;
+        align-self: center; */
     }
 
     .relaxtxt{
@@ -616,16 +623,19 @@ form button:hover{
 
     .relaxtxt h2{
         font-size:35px;
+        margin-bottom: 10px;
     }
 
     .relaxtxt p{
         font-size:15px;
         line-height:135%;
+        margin-bottom: 10px;
     }
 
     .relax button{
         padding: 12px 20px;
         margin-top: 6%;
+        margin-bottom:20px;
         border:none;
         font-size:15px;
         border-radius:6px;
@@ -760,7 +770,6 @@ form button:hover{
     img.x{
         display:inline-block;
         position:absolute;
-        right:10px;
         display: block;
         max-width:30px;
         width:100%;
